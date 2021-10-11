@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"> 
+                    <a class="nav-link" href="http://localhost:8080/Project_1/departmentheadpage.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8080/Project_1/formPage.html" tabindex="-1" aria-disabled="true">Submit New Request</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8080/Project_1">Logout</a>
+                  </li>
+                </ul>
+            </div>
+            
+            </nav>
+            <h2 style="text-align:center">Department Head Home</h2>
+            <div id="greeting"></div>
+        <div id="requests"></div>
+            
+        <form style='margin:10px'>
+            <label>
+                Which request? (ID)     <input type="text" id="request_id" required >
+            </label>
+        <br>
+            <label>
+                <div>
+                Action:  <br>       
+                    <input type="radio" id="approve"  name="action" onclick='yesnoCheck()'>
+                    <label for="approve">Approve Request</label>
+               <br>
+                    <input type="radio" id="req_info_emp"  name="action" onclick='yesnoCheck()'>
+                    <label for="req_info">Request Information from Employee</label>
+               <br>
+                    <input type="radio" id="req_info_ds"  name="action" onclick='yesnoCheck()'>
+                    <label for="req_info">Request Information from Supervisor</label>
+               <br>
+                   <input type="radio" id="deny" name="action" onclick='yesnoCheck()' >
+                    <label for="deny">Deny Request</label>
+                </div> 
+            </label>
+        <br>    
+            
+            <label>
+                  <input value="unspecified" type="textbox" id="denialreason" name="other" style="visibility:hidden;"/>
+            </label>
+            <button type="button" onclick="updateApprovals()">Submit</button>
+        </form>
+    <script src = "departmenthead.js"></script>
+    </body>
+</html>

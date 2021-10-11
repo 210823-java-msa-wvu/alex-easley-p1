@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>dev.easley.servlets.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>dev.easley.servlets.RequestServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ApprovalServlet</servlet-name>
+    <servlet-class>dev.easley.servlets.ApprovalServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ExtraServlet</servlet-name>
+    <servlet-class>dev.easley.servlets.ExtraServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExtraServlet2</servlet-name>
+    <servlet-class>dev.easley.servlets.ExtraServlet2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExtraServlet2</servlet-name>
+    <url-pattern>/updateCost</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ExtraServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ApprovalServlet</servlet-name>
+    <url-pattern>/approvals</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/submitForm</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>

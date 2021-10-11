@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"> 
+                <a class="nav-link" href="http://localhost:8080/Project_1/employeepage.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/Project_1/formPage.html" tabindex="-1" aria-disabled="true">Submit New Request</a>
+              </li>
+              <span class="navbar-text">
+                <a class="nav-text"  onclick="getRequestsFetch()">View Requests</a>
+              </span>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/Project_1">Logout</a>
+              </li>
+            </ul>
+        </div>
+        
+        </nav>
+    <h2 style="text-align:center">Employee Home</h2>
+    <div id="greeting"></div>
+    <div id="requests"></div>
+    <form style="margin-left: 50px">
+    <div class="form-group">
+        <label><b>Submit Grade</b></label>
+    <br>
+        <label>Which ID?</label>
+    <br>
+        <input class="form-text" id="id" type="text" name="gradeID">
+        <br>
+        <select name="EventType" id="grade">
+            <option value="Placeholder">Select Grade</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">A</option>
+            <option value="F">F</option>
+            <option value="Passed">Passed</option>
+            <option value="Failed">Failed</option>
+            <option value="Presentation Passed">Presentation Passed</option>
+            <option value="Presentation Failed">Presentation Failed</option>
+          </select>
+        <br>
+        <br>
+          <input type=button onclick="updateGrade()" value="Submit Grade"></button>
+    </div>
+    </form>
+
+  
+    
+    <script src="employeePage.js"></script>
+</body>
+</html>
