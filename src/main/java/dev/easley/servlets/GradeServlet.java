@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ExtraServlet extends HttpServlet {
+public class GradeServlet extends HttpServlet {
 
     ObjectMapper om = new ObjectMapper();
     RequestService requestService = new RequestService();

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ExtraServlet2 extends HttpServlet {
+public class CostServlet extends HttpServlet {
 
     ObjectMapper om = new ObjectMapper();
     RequestService requestService = new RequestService();
