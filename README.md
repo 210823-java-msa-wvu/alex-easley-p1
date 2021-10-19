@@ -6,6 +6,8 @@ Project Description
 - Java 8
 - Apache Tomcat 9
 - Maven
+- HTML/CSS
+- JavaScript
 - Visual Studio Code
 - DBeaver/PostgreSQL
 - Log4j
